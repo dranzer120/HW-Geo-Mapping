@@ -39,11 +39,11 @@ function createMap(earthquakes) {
     legend.onAdd = function() {
         var div = L.DomUtil.create('div', 'legend');
             div.innerHTML = 
-            ['<div class="square" style="background-color: #32CD32;"></div><div class="hello">0-1</div>',
+            ['<strong>Magnitude</strong><br><br><div class="square" style="background-color: #32CD32;"></div><div class="hello">0-1</div>',
              '<div class="square" style="background-color: #7CFC00;"></div><div class="hello">1-2</div>',
              '<div class="square" style="background-color: yellow;"></div><div class="hello">2-3</div>',
              '<div class="square" style="background-color: #FF8C00;"></div><div class="hello">3-4</div>',
-             '<div class="square" style="background-color: red;"></div><div class="hello">4-5</div>'].join("");
+             '<div class="square" style="background-color: red;"></div><div class="hello">4-5</div>'].join("<br><br>");
         return div;
         };
 
